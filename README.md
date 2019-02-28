@@ -48,3 +48,14 @@ Specifically, I'll cover:
 - How to effectively use NamedTuples, and even subclass and extend them!
 
 Lastly, I'll go over some example code that ties many of these techniques together in a cohesive way. You'll leave this talk feeling confident about using these tools and techniques in your next python project!
+
+### Dataclasses: The code generator to end all code generators
+by Raymond Hettinger, Mutable Minds
+
+The PEP 557 dataclasses module is available in starting in Python 3.7. It will become an essential part of every Python programmer's toolkit. This talk shows what problem the module solves, explains its key design decisions, and provides practical examples of how to put it to work.
+
+Dataclasses are shown to be the next step in a progression of data aggregation tools: tuple, dict, simple class, bunch recipe, named tuples, records, attrs, and then dataclasses. Each builds upon the one that came before, adding expressiveness at the expense of complexity.
+
+Dataclasses are unique in that they let you selectively turn-on or turn-off its various capabilities and it lets the user choose the underlying data store (either instance dictionary, instance slots, or an inherited base class).
+
+Dataclasses and typing.NamedTuple both use variable annotations which were new in Python 3.6.
